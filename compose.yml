@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: frawatson/mongo
+    ports:
+      - '80:80'
+    volumes:
+      - website-volume:/usr/local/apache2/htdocs/
+
+volumes:
+  website-volume:
